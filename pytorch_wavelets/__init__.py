@@ -12,14 +12,17 @@ __all__ = [
     'IDWT',
     'DWT1D',
     'DWT2D',
+    'DWT3D',
     'IDWT1D',
     'IDWT2D',
+    'IDWT3D',
     'ScatLayer',
     'ScatLayerj2'
 ]
 
 from pytorch_wavelets._version import __version__
 from pytorch_wavelets.dtcwt.transform2d import DTCWTForward, DTCWTInverse
+from pytorch_wavelets.dwt.transform3d import DWTForward3D, DWTInverse3D
 from pytorch_wavelets.dwt.transform2d import DWTForward, DWTInverse
 from pytorch_wavelets.dwt.transform1d import DWT1DForward, DWT1DInverse
 from pytorch_wavelets.scatternet import ScatLayer, ScatLayerj2
@@ -34,3 +37,6 @@ IDWT2D = IDWT
 
 DWT1D = DWT1DForward
 IDWT1D = DWT1DInverse
+
+DWT3D = DWTForward3D
+IDWT3D = DWTInverse3D
